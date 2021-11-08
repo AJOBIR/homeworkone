@@ -1,26 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:homeworkone/pege/LoginPage.dars.dart';
-import 'package:homeworkone/pege/home%20page.dart';
+class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
 
-void main() {
-  runApp(MyApp());
+  @override
+  _MyAppState createState() => _MyAppState();
 }
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      routes: {
-        HomePage.id:(context) =>HomePage(),
-        LoginPage.id:(context) =>LoginPage(),
-      },
-      title: 'Flutter Demo',
-      theme: ThemeData(
-
-        primarySwatch: Colors.blue,
-      ),
-      home: const HomePage(),
-    );
+    return Scaffold();
   }
 }
